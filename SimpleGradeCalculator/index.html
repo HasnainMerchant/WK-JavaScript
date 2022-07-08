@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grade Calculator</title>
+    <script>
+    function calculateGrade()
+    {
+        var marks = document.querySelector("#marks").value;
+        if (marks <= 100 && marks >= 80) 
+        {
+            alert("Your Grade Is A \n\nGood Job !");
+        } 
+        else if (marks <= 79 && marks>= 60) 
+        {
+            alert("Your Grade Is B \n\nCan Do Better !");
+        } 
+        else if (marks <= 59 && marks>= 40) 
+        {
+            alert("Your Grade Is C \n\nNeed Improvement !");
+        } 
+        else {
+            alert("Your Grade Is F \n\nNeed a Lot Of Improvement !");
+        }
+}
+    </script>
+</head>
+<body>
+    <center>
+        <h2>Simple Grade Claculator Using JavaScript</h2>
+        <form action="" onsubmit="calculateGrade()">
+            Enter Total Marks - <input type="text" name="marks" id="marks"><br>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </center>
+    </body>
+</html>
