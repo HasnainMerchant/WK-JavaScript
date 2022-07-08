@@ -4,9 +4,9 @@ z = x * y
 console.log(z)
 
 var person = {
-    firstname : 'Hasnain',
-    lastname : 'Merchant',
-    age : 20,
+    firstname : 'John',
+    lastname : 'Doe',
+    age : 43,
     gender : 'Male'
 }
 console.log(person.firstname)
