@@ -1,0 +1,3 @@
+function setVal(){
+    alert("Hi");
+}
