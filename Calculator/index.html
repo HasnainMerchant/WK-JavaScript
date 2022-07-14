@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <center>
+        <fieldset class="calculator">
+            <legend>Calculator</legend>
+            <div class="numbers">
+                <input type="text" name="result" id="result"><br><br>
+                <input type="button" id="one" value="1" onclick="display(this.id);"></input>
+                <input type="button" id="two" value="2" onclick="display(this.id);"></input>
+                <input type="button" id="three" value="3" onclick="display(this.id);"></input><br>
+                <input type="button" id="four" value="4" onclick="display(this.id);"></input>
+                <input type="button" id="five" value="5" onclick="display(this.id);"></input>
+                <input type="button" id="six" value="6" onclick="display(this.id);"></input><br>
+                <input type="button" id="seven" value="7" onclick="display(this.id);"></input>
+                <input type="button" id="eight" value="8" onclick="display(this.id);"></input>
+                <input type="button" id="nine" value="9" onclick="display(this.id);"></input><br>
+                <input type="button" id="zero" value="0" onclick="display(this.id);"></input><br>
+            </div>
+            <div class="operations">
+                <input type="button" id="plus" value="+" onclick="display(this.id);"></input>
+                <input type="button" id="minus" value="-" onclick="display(this.id);"></input>
+                <input type="button" id="div" value="/" onclick="display(this.id);"></input>
+                <input type="button" id="minus" value="*" onclick="display(this.id);"></input><br>
+                <input type="button" id="brac_open" value="(" onclick="display(this.id);"></input>
+                <input type="button" id="brac_closed" value=")" onclick="display(this.id);"></input><br>
+                <input type="button" id="equal" value="=" onclick="getResult();"></input>
+            </div>
+            <input type="button" id="clear" value="Clear" onclick="clearText();">
+        </fieldset>
+    </center>
+</body>
+</html>
