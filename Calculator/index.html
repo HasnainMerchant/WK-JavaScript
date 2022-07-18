@@ -10,7 +10,7 @@
 </head>
 <body>
     <center>
-        <fieldset class="calculator">
+        <!-- <fieldset class="calculator">
             <legend>Calculator</legend>
             <div class="numbers">
                 <input type="text" name="result" id="result"><br><br>
@@ -29,13 +29,51 @@
                 <input type="button" id="plus" value="+" onclick="display(this.id);"></input>
                 <input type="button" id="minus" value="-" onclick="display(this.id);"></input>
                 <input type="button" id="div" value="/" onclick="display(this.id);"></input>
-                <input type="button" id="minus" value="*" onclick="display(this.id);"></input><br>
+                <input type="button" id="mul" value="*" onclick="display(this.id);"></input><br>
                 <input type="button" id="brac_open" value="(" onclick="display(this.id);"></input>
                 <input type="button" id="brac_closed" value=")" onclick="display(this.id);"></input><br>
                 <input type="button" id="equal" value="=" onclick="getResult();"></input>
             </div>
             <input type="button" id="clear" value="Clear" onclick="clearText();">
-        </fieldset>
+        </fieldset> -->
+        <div class="container">
+            <div class="header">Calculator</div>
+            <input type="text" class="result" id="result">
+            <table>
+              <tr>
+                <td><input type="button" id="brac_open" value="(" class="global first-row" onclick="display(this.id);"></td>
+                <td><input type="button" id="brac_closed" value=")" class="global first-row" onclick="display(this.id);"></td>
+                <td><input type="button" id="modulus" value="%" class="global first-row" onclick="display(this.id);"></td>
+              </tr>
+              <tr>
+                <td><input type="button" id="seven" value="7" class="global" onclick="display(this.id);"></td>
+                <td><input type="button" id="eight" value="8" class="global" onclick="display(this.id);"></td>
+                <td><input type="button" id="nine" value="9" class="global" onclick="display(this.id);"></td>
+                <td><input type="button" id="div" value="/" class="global" onclick="display(this.id);"></td>
+              </tr>
+              <tr>
+                <td><input type="button" id="four" value="4" class="global" onclick="display(this.id);"></td>
+                <td><input type="button" id="five" value="5" class="global" onclick="display(this.id);"></td>
+                <td><input type="button" id="six" value="6" class="global" onclick="display(this.id);"></input></td>
+                <td><input type="button" id="mul" value="*" class="global" onclick="display(this.id);"></input></td>
+              </tr>
+              <tr>
+                <td><input type="button" id="one" value="1" class="global" onclick="display(this.id);"></input></td>
+                <td><input type="button" id="two" value="2" class="global" onclick="display(this.id);"></input></td>
+                <td><input type="button" id="three" value="3" class="global" onclick="display(this.id);"></input></td>
+                <td><input type="button" id="minus" value="-" class="global" onclick="display(this.id);"></input></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="button" id="zero" value="0" class="global grey" onclick="display(this.id);"></td>
+                <td><input type="button" value="." id="dot" class="global" onclick="display(this.id);"></td>
+                <td rowspan="2"><input type="button" id="plus" value="+" class="global plus" onclick="display(this.id);"></td>
+              </tr>
+              <tr>
+                <td><input type="button" id="clear" value="Clear" class="global red white-text" onclick="clearText();"></td>
+                <td colspan="2"><input type="button" value="=" class="global green white-text" onclick="getResult();"></td>
+              </tr>
+            </table>
+          </div>
     </center>
 </body>
 </html>
