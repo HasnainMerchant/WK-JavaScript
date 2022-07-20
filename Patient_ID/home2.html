@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="register2.js"></script>
+</head>
+<body>
+   Enter Patient's FirstName - <input type="text" id="fname" name="fname"><br>
+   Enter Patient's LastName - <input type="text" id="lname" name="lname"><br>
+   Enter Patient's Gender - <input type="text" id="gender" name="gender"><br>
+   Enter Patient's Age - <input type="number" id="age" name="age"><br>
+   <button id="register" onclick="registerPatient()">Register</button>
+   <table border="1" id="myTable">
+    <tr>
+        <th>ID</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td id="p_id"></td>
+        <td id="firstname"></td>
+        <td id="lastname"></td>
+        <td id="p_gender"></td>
+        <td id="p_age"></td>
+    </tr>
+   </table>
+</body>
+</html>
