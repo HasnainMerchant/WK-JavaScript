@@ -1,23 +1,3 @@
-patient_list = []
-function registerPatient(){
-    let id = Math.floor(Math.random() * 5);
-    let firstname = document.getElementById("fname").value;
-    let lastname = document.getElementById("lname").value;
-    let gender = document.getElementById("gender").value;
-    let age = document.getElementById("age").value;
-    patient = [id, firstname, lastname, gender, age]
-    patient_list.push(patient);
-    let patientSet = new Set(patient_list);
-    document.getElementById("fname").innerText = "";
-    document.getElementById("lname").innerText = "";
-    document.getElementById("gender").innerText = "";
-    document.getElementById("age").innerText = "";
-    if (patientSet.has(id)){
-        alert("ID Is Taken");
-    }
-    patientSet.forEach(displayPatientList);
-}
-
 patient_id = []
 patient_list = []
 function generateRandomID(){
