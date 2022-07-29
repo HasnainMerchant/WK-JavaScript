@@ -22,19 +22,27 @@
 // console.log(x, y, z)
 // console.log(arr)
 
-const question = new Map([
-    ["Nagraj", 100],
-    ["Football", ["Hello", "World"]],
-    [102, "Football"],
-    [[1,2], ["hello", "world"]],
-]);
+// const question = new Map([
+//     ["Nagraj", 100],
+//     ["Football", ["Hello", "World"]],
+//     [102, "Football"],
+//     [[1,2], ["hello", "world"]],
+// ]);
 
-console.log(question)
-let key_itr = question.values()
-console.log(typeof(key_itr.next().value));
-console.log(typeof(key_itr.next().value));
-console.log(typeof(key_itr.next().value));
-console.log(typeof(key_itr.next().value));
+// console.log(question)
+// let key_itr = question.values()
+// console.log(typeof(key_itr.next().value));
+// console.log(typeof(key_itr.next().value));
+// console.log(typeof(key_itr.next().value));
+// console.log(typeof(key_itr.next().value));
 // values = question.get([1,2])
 // console.log(values)
 // console.log(question.values());
+
+const Student_New = {
+    name : "Hasnain",
+    age : 21
+}
+
+let s1 = Object.create(Student_New)
+console.log(s1.name);

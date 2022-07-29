@@ -19,11 +19,25 @@ function generateRandomID(){
         document.getElementById("age").innerText = "";
         patient = [id, firstname, lastname, gender, age];
         patient_list.push(patient);
-        patient_list.forEach(displayPatientList);
+        alert("Patient Number " + id + " Added");
+        // patient_list.forEach(displayPatientList);
     }
 }
+function showPatients()
+{
+    patient_list.forEach(displayPatientList);
+}
 let displayPatientList = function(patient){
+    var table1body = document.getElementById("table1Body");
+    table1body.innerHTML = "";
     document.getElementById("details").innerText += " " + `${patient}`;
+    var table = document.getElementById("table1");
+        var row = table.insertRow(-1);
+        row.insertCell(0).innerHTML = `${patient[0]}`;
+        row.insertCell(1).innerHTML = `${patient[1]}`;
+        row.insertCell(2).innerHTML = `${patient[2]}`;
+        row.insertCell(3).innerHTML = `${patient[3]}`;
+        row.insertCell(4).innerHTML = `${patient[4]}`;
     // document.getElementById("p_id").innerText += " " + `${patient[0]}`;
     // document.getElementById("firstname").innerText += " " + `${patient[1]}`;
     // document.getElementById("lastname").innerText += " " + `${patient[2]}`;
